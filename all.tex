@@ -1,0 +1,351 @@
+\include{preamble}
+
+\AtBeginDocument{\addtocontents{toc}{\protect\thispagestyle{empty}}} 
+
+\begin{document}
+
+\pagestyle{fancy}
+\tolerance 1000% rozluznienie justyfikacji
+
+\chapter[Liturgia Horarum][Liturgia Horarum]{Liturgia Horarum}
+\newpage
+\section[Wednesday]{Wednesday}
+\markboth{\uppercase{Wednesday}}{\uppercase{Morning Prayer}}
+\begin{english}
+\subsection*{Invitatory}
+\input{src/init_en}
+
+\input{src/wednesday_ps_inv}
+
+\subsection*{Hymn}
+\input{src/wednesday_hymn}
+
+\newpage \subsection*{Psalmody}
+\input{src/wednesday_ps1}
+
+\newpage \input{src/wednesday_ps2}
+
+\input{src/wednesday_ps3}
+
+\input{src/wednesday_reading}
+
+\subsection*{Gospel Canticle}
+\input{src/wednesday_canticle}
+
+\subsection*{Intercessions}
+\input{src/wednesday_intercessions}
+
+\newpage \subsection*{The Lord’s Prayer}
+\input{src/father_en}
+
+\input{src/wednesday_prayer}
+
+\subsection*{Dismissal}
+\input{src/dismissal_en}
+\end{english}
+
+\newpage
+\section[Jeudi]{Jeudi}
+\markboth{\uppercase{Jeudi}}{\uppercase{Office des Laudes}}
+\begin{french}
+\subsection*{Invitatoire}
+\input{src/init_fr}
+
+%\input{src/jeudi_ps_inv}
+
+\subsection*{Hymne}
+\input{src/jeudi_hymn}
+
+\newpage \subsection*{Psalmodie}
+\input{src/jeudi_ps1}
+
+\input{src/jeudi_ps2}
+
+\newpage \input{src/jeudi_ps3}
+
+\input{src/jeudi_reading}
+\vspace{-1em}
+\subsection*{Cantique de Zacharie}
+\input{src/jeudi_canticle}
+
+\subsection*{Intercession}
+\input{src/jeudi_intercessions}
+
+\subsection*{Notre Père}
+\input{src/father_fr}
+
+\input{src/jeudi_prayer}
+
+\subsection*{Bénédiction}
+\input{src/dismissal_fr}
+\end{french}
+
+\newpage
+\section[Friday]{Friday}
+\markboth{\uppercase{Friday}}{\uppercase{Morning Prayer}}
+\begin{english}
+\subsection*{Invitatory}
+\input{src/init_en}
+
+\input{src/friday_ps_inv}
+
+\subsection*{Hymn}
+\input{src/friday_hymn}
+\subsection*{Psalmody}
+
+\input{src/friday_ps1}
+
+\input{src/friday_ps2}
+
+\input{src/friday_ps3}
+
+\newpage \input{src/friday_reading}
+
+\subsection*{Gospel Canticle}
+\input{src/friday_canticle}
+
+\subsection*{Intercessions}
+\input{src/friday_intercessions}
+
+\subsection*{The Lord’s Prayer}
+\input{src/father_en}
+
+\newpage \input{src/friday_prayer}
+
+\subsection*{Dismissal}
+\input{src/dismissal_en}
+\end{english}
+
+\newpage
+\section[Samedi]{Samedi}
+\markboth{\uppercase{Samedi}}{\uppercase{Office des Laudes}}
+\begin{french}
+\subsection*{Invitatoire}
+\input{src/init_fr}
+
+%\input{src/samedi_ps_inv}
+
+\subsection*{Hymne}
+\input{src/samedi_hymn}
+
+\newpage \subsection*{Psalmodie}
+\input{src/samedi_ps1}
+
+\input{src/samedi_ps2}
+
+\newpage \input{src/samedi_ps3}
+
+\input{src/samedi_reading}
+\vspace{-1em}
+\subsection*{Cantique de Zacharie}
+\input{src/samedi_canticle}
+
+\subsection*{Intercession}
+\input{src/samedi_intercessions}
+
+\subsection*{Notre Père}
+\input{src/father_fr}
+
+\input{src/samedi_prayer}
+
+\subsection*{Bénédiction}
+\input{src/dismissal_fr}
+\end{french}
+
+\include{ordo_prop}
+\chapter[The Order of Mass][The Order of Mass]{The Order of Mass}
+\markboth{{}}{\uppercase{Introductory Rites}}
+\begin{english}
+\subsection*{Introductory Rites}
+
+\input{src/ordinario/intro_en}
+
+\include{lect_prop}
+\newpage
+\section[The Liturgy of the Word]{The Liturgy of the Word}
+\dd{Wednesday}
+\markboth{\uppercase{Wednesday}}{\uppercase{Liturgy of the Word}}
+
+\input{src/19_first_reading_en}
+
+\input{src/19_psalm_en}
+
+\input{src/gospel_acclamation_en}
+
+\input{src/19_gospel_en}
+
+\newpage
+\dd{Thursday}
+\markboth{\uppercase{Thursday}}{\uppercase{Liturgy of the Word}}
+
+\input{src/20_first_reading_en}
+
+\input{src/20_psalm_en}
+
+\input{src/gospel_acclamation_en}
+
+\input{src/20_gospel_en}
+
+\newpage
+\dd{Friday}
+\markboth{\uppercase{Friday}}{\uppercase{Liturgy of the Word}}
+
+\input{src/21_first_reading_en}
+\newpage
+\input{src/21_psalm_en}
+
+\input{src/gospel_acclamation_en}
+
+\input{src/21_gospel_en}
+
+\newpage
+\dd{Saturday}
+\markboth{\uppercase{Saturday}}{\uppercase{Liturgy of the Word}}
+
+\input{src/22_first_reading_en}
+
+\input{src/22_psalm_en}
+
+\input{src/gospel_acclamation_en}
+
+\input{src/22_gospel_en}
+
+\include{ordo_prop}
+\newpage
+\section[The Liturgy of the Eucharist]{The Liturgy of the Eucharist}
+\markboth{{}}{\uppercase{The Liturgy of the Eucharist}}
+\input{src/ordinario/eucharistic_liturgy_en}
+
+\subsection*{The Eucharistic Prayer}
+\input{src/ordinario/eucharistic_prayer_en}
+
+\newpage \subsection*{The Communion Rite}
+\input{src/ordinario/communion_en}
+
+\newpage \subsection*{Concluding Rite}
+\input{src/ordinario/concluding_en}
+\end{english}
+
+
+\include{ordo_prop}
+\chapter[Ordinaire de la Messe][Ordinaire de la Messe]{Ordinaire de la Messe}
+\markboth{{}}{\uppercase{Rite d’Entree}}
+\begin{french}
+\subsection*{Rite d’Entree}
+
+\input{src/ordinario/intro_fr}
+
+\include{lect_prop}
+\section[Liturgie de la Parole]{Liturgie de la Parole}
+\dd{Mercredi}
+\markboth{\uppercase{Mercredi}}{\uppercase{Liturgie de la Parole}}
+\input{src/19_first_reading_fr}
+
+\newpage \input{src/19_psalm_fr}
+
+\input{src/gospel_acclamation_fr}
+
+\input{src/19_gospel_fr}
+
+\newpage
+\dd{Jeudi}
+\markboth{\uppercase{Jeudi}}{\uppercase{Liturgie de la Parole}}
+\input{src/20_first_reading_fr}
+
+\input{src/20_psalm_fr}
+
+\input{src/gospel_acclamation_fr}
+
+\input{src/20_gospel_fr}
+
+\newpage
+\dd{Vendredi}
+\markboth{\uppercase{Vendredi}}{\uppercase{Liturgie de la Parole}}
+\input{src/21_first_reading_fr}
+
+\newpage \input{src/21_psalm_fr}
+
+\input{src/gospel_acclamation_fr}
+
+\input{src/21_gospel_fr}
+
+\newpage
+\dd{Samedi}
+\markboth{\uppercase{Samedi}}{\uppercase{Liturgie de la Parole}}
+\input{src/22_first_reading_fr}
+
+\input{src/22_psalm_fr}
+
+\input{src/gospel_acclamation_fr}
+
+\input{src/22_gospel_fr}
+
+\newpage
+\include{ordo_prop}
+\section[Liturgie Eucharistique]{Liturgie Eucharistique}
+\markboth{{}}{\uppercase{Liturgie Eucharistique}}
+\input{src/ordinario/eucharistic_liturgy_fr}
+
+\subsection*{Prière Eucharistique}
+\input{src/ordinario/eucharistic_prayer_fr}
+
+\newpage \subsection*{La Communion}
+\input{src/ordinario/communion_fr}
+
+\newpage \subsection*{Conclusion}
+\input{src/ordinario/concluding_fr}
+\end{french}
+
+
+\addtocontents{toc}{\protect\addvspace{\bigskipamount}}
+
+\include{lect_prop}
+\section[Liturgia Słowa]{Liturgia Słowa}
+\dd{Środa}
+\markboth{\uppercase{Środa}}{\uppercase{Liturgia Słowa}}
+\input{src/19_first_reading_pl}
+
+\input{src/19_psalm_pl}
+
+\input{src/gospel_acclamation_pl}
+
+\input{src/19_gospel_pl}
+
+\newpage
+\dd{Czwartek}
+\markboth{\uppercase{Czwartek}}{\uppercase{Liturgia Słowa}}
+\input{src/20_first_reading_pl}
+
+\input{src/20_psalm_pl}
+
+\input{src/gospel_acclamation_pl}
+
+\input{src/20_gospel_pl}
+
+\newpage
+\dd{Piątek}
+\markboth{\uppercase{Piątek}}{\uppercase{Liturgia Słowa}}
+\input{src/20_first_reading_pl}
+
+\input{src/20_psalm_pl}
+
+\input{src/gospel_acclamation_pl}
+
+\input{src/20_gospel_pl}
+
+\newpage
+\dd{Sobota}
+\markboth{\uppercase{Sobota}}{\uppercase{Liturgia Słowa}}
+\input{src/20_first_reading_pl}
+
+\input{src/20_psalm_pl}
+
+\input{src/gospel_acclamation_pl}
+
+\input{src/20_gospel_pl}
+
+\newpage
+\blankpage
+\pagestyle{empty}
+\tableofcontents*
+\end{document}

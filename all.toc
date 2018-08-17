@@ -1,0 +1,39 @@
+\select@language {english}
+\thispagestyle {empty}
+\contentsline {chapter}{Liturgia Horarum}{3}{chapter*.1}
+\contentsline {section}{Wednesday}{3}{section*.2}
+\select@language {english}
+\select@language {english}
+\contentsline {section}{Jeudi}{11}{section*.10}
+\select@language {french}
+\select@language {english}
+\contentsline {section}{Friday}{18}{section*.19}
+\select@language {english}
+\select@language {english}
+\contentsline {section}{Samedi}{26}{section*.27}
+\select@language {french}
+\select@language {english}
+\contentsline {chapter}{The Order of Mass}{35}{chapter*.36}
+\select@language {english}
+\contentsline {section}{The Liturgy of the Word}{37}{section*.38}
+{{\hspace {\parindent }Wednesday}\unhbox \voidb@x \cleaders \hbox to.75em{\hss .\hss }\hfill \kern \z@ \nobreakspace {}\nobreakspace {}\nobreakspace {}37\endgraf }
+{{\hspace {\parindent }Thursday}\unhbox \voidb@x \cleaders \hbox to.75em{\hss .\hss }\hfill \kern \z@ \nobreakspace {}\nobreakspace {}\nobreakspace {}40\endgraf }
+{{\hspace {\parindent }Friday}\unhbox \voidb@x \cleaders \hbox to.75em{\hss .\hss }\hfill \kern \z@ \nobreakspace {}\nobreakspace {}\nobreakspace {}43\endgraf }
+{{\hspace {\parindent }Saturday}\unhbox \voidb@x \cleaders \hbox to.75em{\hss .\hss }\hfill \kern \z@ \nobreakspace {}\nobreakspace {}\nobreakspace {}46\endgraf }
+\contentsline {section}{The Liturgy of the Eucharist}{48}{section*.39}
+\select@language {english}
+\contentsline {chapter}{Ordinaire de la Messe}{57}{chapter*.43}
+\select@language {french}
+\contentsline {section}{Liturgie de la Parole}{59}{section*.45}
+{{\hspace {\parindent }Mercredi}\unhbox \voidb@x \cleaders \hbox to.75em{\hss .\hss }\hfill \kern \z@ \nobreakspace {}\nobreakspace {}\nobreakspace {}59\endgraf }
+{{\hspace {\parindent }Jeudi}\unhbox \voidb@x \cleaders \hbox to.75em{\hss .\hss }\hfill \kern \z@ \nobreakspace {}\nobreakspace {}\nobreakspace {}62\endgraf }
+{{\hspace {\parindent }Vendredi}\unhbox \voidb@x \cleaders \hbox to.75em{\hss .\hss }\hfill \kern \z@ \nobreakspace {}\nobreakspace {}\nobreakspace {}65\endgraf }
+{{\hspace {\parindent }Samedi}\unhbox \voidb@x \cleaders \hbox to.75em{\hss .\hss }\hfill \kern \z@ \nobreakspace {}\nobreakspace {}\nobreakspace {}68\endgraf }
+\contentsline {section}{Liturgie Eucharistique}{70}{section*.46}
+\select@language {english}
+\addvspace {\bigskipamount }
+\contentsline {section}{Liturgia Słowa}{76}{section*.50}
+{{\hspace {\parindent }Środa}\unhbox \voidb@x \cleaders \hbox to.75em{\hss .\hss }\hfill \kern \z@ \nobreakspace {}\nobreakspace {}\nobreakspace {}76\endgraf }
+{{\hspace {\parindent }Czwartek}\unhbox \voidb@x \cleaders \hbox to.75em{\hss .\hss }\hfill \kern \z@ \nobreakspace {}\nobreakspace {}\nobreakspace {}79\endgraf }
+{{\hspace {\parindent }Piątek}\unhbox \voidb@x \cleaders \hbox to.75em{\hss .\hss }\hfill \kern \z@ \nobreakspace {}\nobreakspace {}\nobreakspace {}82\endgraf }
+{{\hspace {\parindent }Sobota}\unhbox \voidb@x \cleaders \hbox to.75em{\hss .\hss }\hfill \kern \z@ \nobreakspace {}\nobreakspace {}\nobreakspace {}85\endgraf }

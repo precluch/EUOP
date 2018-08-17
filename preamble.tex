@@ -1,0 +1,308 @@
+\documentclass[11pt,a5paper,openright]{memoir}
+\usepackage[
+	top=.65in, 
+	bottom=.85in, 
+	inner=1in, 
+	outer=.6in,
+	headsep=.15in,
+	footskip=.3in,
+	nomarginpar,
+%	showframe,
+	twoside]{geometry}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{polski}
+\usepackage{fontspec}
+\usepackage{enumitem}
+\usepackage{multicol}
+\usepackage{gmverse}
+\usepackage{lipsum}
+\usepackage{pdfpages}
+\usepackage{pifont}
+\usepackage{fancyhdr}
+\usepackage{pgfornament}
+\usepackage{afterpage}
+\usepackage{polyglossia}
+\usepackage{hyperref}
+
+\hypersetup{
+	bookmarks=false,
+	colorlinks=true,
+	pdffitwindow=true,
+	pdfstartview={Fit},
+	pdfproducer={Dominikanie Kraków},
+	pdftitle={EUOP Liturgy Texts},
+	pdfauthor={Michał Tarasiuk},
+	pdfnewwindow=true,
+	linkcolor=black,
+	linktoc=page,
+	unicode
+}
+
+\makeatletter
+\renewcommand \dotfill {\leavevmode \cleaders \hb@xt@ .75em{\hss .\hss }\hfill \kern \z@}
+\makeatother
+
+\setdefaultlanguage[variant=uk]{english}
+\setotherlanguages{french, spanish, polish}
+
+\newcommand\blankpage{%
+    \null
+    \thispagestyle{empty}%
+    \newpage}
+
+\newlength{\myindent}
+\setlength{\myindent}{\parindent}
+
+\definecolor{red}{HTML}{ef2d32}%rozowawy
+%\definecolor{red}{HTML}{800000}%bordowy
+
+% XeLaTeX
+%Adobe Garamond Pro
+\fontspec[
+	BoldFont={Adobe Garamond Pro},%
+	ItalicFont={Adobe Garamond Pro},%
+	SmallCapsFont={Adobe Garamond Pro}
+	]
+{Adobe Garamond Pro}
+\setmainfont{Adobe Garamond Pro}[
+	Contextuals=Swash,
+	Numbers={OldStyle, Proportional},
+	Ligatures={Common, Rare}]
+
+\newfontfamily\titling{Eligible}
+
+%%Times New Roman
+%\fontspec[
+%	BoldFont={Times New Roman},%
+%	ItalicFont={Times New Roman},%
+%	SmallCapsFont={Times New Roman}]
+%{Times New Roman}
+%\setmainfont{Times New Roman}[
+%	Contextuals=Swash,
+%	Numbers={OldStyle, Proportional},
+%	Ligatures={Common, Rare}]
+
+%%Sorts Mill Goudy only
+%\fontspec[
+%	BoldFont={Sorts Mill Goudy},%
+%	ItalicFont={Sorts Mill Goudy},%
+%	SmallCapsFont={Sorts Mill Goudy}]
+%{Sorts Mill Goudy}
+%\setmainfont{Sorts Mill Goudy}[
+%	Contextuals=Swash,
+%	Numbers={OldStyle, Proportional},
+%	Ligatures={Common, Rare}]
+
+%% Chapter style
+\makechapterstyle{ieop_chpt}{
+
+\setsecheadstyle{\titling\bfseries\Large\centering\uppercase}
+\setsubsecheadstyle{\scshape\color{red}}
+\setaftersubsecskip{1pt}
+\setbeforesubsecskip{1pt}
+
+\renewcommand\printchaptername{}
+\renewcommand\printchapternum{}
+\renewcommand\chaptitlefont{\titling\bfseries\HUGE\scshape\centering}
+\renewcommand\printchaptertitle[1]{\pagestyle{empty}
+	\chaptitlefont ##1 \newpage\blankpage}
+
+}
+\chapterstyle{ieop_chpt}
+
+\setsecnumdepth{none}
+\maxsecnumdepth{none}
+
+\makeatletter
+\renewcommand*{\@tocmaketitle}{
+	\thispagestyle{plain}
+	\begin{center}
+		\chaptitlefont Contents
+	\end{center}
+}
+\makeatother
+
+\newcommand\myrule{%
+	\pgfornament[color=red, width=0.4\textwidth]{88}}
+	
+\newcommand\myrulev{%
+	\pgfornament[color=red, width=0.4\textwidth, ydelta=-8pt]{88}}
+
+\renewcommand{\headrulewidth}{0pt}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[RE]{\titling\leftmark}
+\fancyhead[LO]{\titling\rightmark}
+\fancyfoot[CE,CO]{\thepage}
+%\fancyfoot[CE,CO]{\myrule \\ \thepage}
+
+\fancypagestyle{plain}{%
+  \fancyhf{}%
+  \fancyfoot[C]{}%
+  \renewcommand{\headrulewidth}{0pt}
+  \renewcommand{\footrulewidth}{0pt}
+}
+
+\setlength{\parskip}{0em}
+
+\newcommand{\red}[1]{
+	{\textcolor{red}{#1}}
+}
+%\newcommand{\red}[1]{
+%	{\textcolor{red}{#1}}
+%}
+
+\newcommand{\hourpart}[1]{
+	\noindent\textsc{
+		\vspace{-1em}
+		\red{#1}\\
+	}\\
+}
+
+\newenvironment{psalm}{
+	\setlength{\parskip}{0pt}
+	\def\par{\ifvmode\hangindent30pt\noindent\else\endgraf\hangindent40pt\fi}
+	\obeylines
+	
+}{}
+
+\newcommand{\psalmline}[3]{
+	\vspace{.3\baselineskip}
+	\noindent\makebox[\textwidth][s]{\rlap{{\subsecheadstyle{#1}}}\hfill\red{#2}\hfill\llap{\red{#3}}}
+}
+%\newcommand{\psalmline}[3]{
+%	\vspace{.3\baselineskip}
+%	\noindent\makebox[\textwidth][s]{\rlap{{\subsecheadstyle{#1}}}\hfill\red{#2}\hfill\llap{\red{#3}}}
+%}
+
+\newcommand{\subsst}[1]{
+	{\subsecheadstyle{#1}}
+}
+
+\newcommand{\pstitle}[1]{
+	\begin{center}
+		\red{#1}\\
+	\end{center}
+}
+
+\newcommand{\psdescr}[2]{
+	\noindent\textit{#1}~{#2}\\
+}
+
+\newcommand{\psalmdscr}[3]{
+	\pstitle{#1}
+	\pstitle{#2}
+	\psdescr{#3}
+	\vspace{+0.3em}
+}
+
+\newcommand{\psalmpartt}[6]{
+	\psalmline{}{#1}{#2}
+	\vspace{-1em}
+	\pstitle{#3}
+	\psdescr{#4}{#5}
+	\vspace{-0.7em}
+	\pstitle{#6}
+}
+
+\newcommand{\psalmpart}[5]{
+	\psalmline{}{#1}{#2}
+	\vspace{-1.5em}
+	\pstitle{#3}
+	\psdescr{#4}{#5}
+}
+
+\newcommand{\reading}[3]{
+	\noindent\textsc{\red{#1}}
+	\hfill
+	\red{#2}
+	\vspace{0.3em}
+	
+	{#3}
+}
+
+\newcommand{\resp}[6]{
+	\indent\red{\small{\textsc{k.}}} {#1}
+	\redast {#2}
+	\red{\small{\textsc{w.}}} {#3}
+	\red{\small{\textsc{k.}}} {#4}
+	\red{\small{\textsc{w.}}} {#5}
+	\red{\small{\textsc{k.}}} {#6}
+	\red{\small{\textsc{w.}}} {#3}
+}
+
+\newcommand{\psverse}[1]{
+	\hangindent={\parindent + \parindent}
+	\noindent{#1}\\
+}
+
+\newcommand{\asks}[2]{
+	\hangindent=\parindent
+	\noindent{#1}
+	
+	\indent \textit{#2}
+	
+}
+
+\newcommand{\ask}[2]{
+	\begin{samepage}
+	\noindent {#1}\\
+	\noindent \red{---}{#2}
+	
+	\end{samepage}
+}
+
+\newcommand{\rubric}[1]{
+	\indent{\red{#1}}
+}
+%\newcommand{\rubric}[1]{
+%	\indent\red{#1}
+%}
+
+\newcommand{\prayer}[1]{
+	\begin{center}
+		\red{#1}\\
+		\vspace{-0.5em}
+	\end{center}
+}
+
+\newcommand{\reddag}{
+		\red{$\dagger$}
+}
+
+\newcommand{\redast}{
+		\red{*}
+}
+
+\newcommand{\lecturedscr}[3]{
+	\hspace{-1.15\parindent}\textsc{\red{#1}}\hfill\red{#2}\\	
+	\noindent\textit{#3}
+}
+
+\newcommand{\lecturecont}[2]{
+	\noindent {#1}
+	
+	{#2}
+}
+
+\newcommand{\lecture}[5]{
+	\lecturedscr{#1}{#2}{#3}
+	
+	\lecturecont{#4}{#5}
+}
+
+\newcommand{\psalmres}[3]{
+	\hspace{-1.15\parindent}\textsc{\red{#1}}\hfill\red{#2}
+	
+	\red{Ref:} {#3}
+}
+
+\newcommand{\psalmverse}[2]{
+	\begin{itemize}[topsep=0pt, partopsep=0pt, parsep=0pt, itemsep=0pt, leftmargin=2em]
+    	\item[\scriptsize\red{#1}] {#2}
+	\end{itemize}
+}

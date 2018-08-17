@@ -1,0 +1,78 @@
+\include{preamble}
+
+\newfontfamily\pr{Adobe Garamond Pro Bold}
+
+\newfontfamily\be{Adobe Garamond Pro Italic}[Ligatures={Common}]
+
+\newfontfamily\eu{Adobe Garamond Pro}[Letters=SmallCaps, Color=red, Scale=1.3]
+
+\setlength{\parskip}{.3em}
+\setbeforesubsecskip{1em}
+\setaftersubsecskip{1em}
+
+\begin{document}
+
+\begin{spanish}
+\chapter[Ordinário De La Misa][Ordinário De La Misa]{Ordinário De La Misa}
+\subsection*{Ritos Iniciales}
+
+\input{src/ordinario/intro_es}
+
+\section[Liturgia de la Palabra]{Liturgia de la Palabra}
+
+\section[Liturgia Eucarística]{Liturgia Eucarística}
+\input{src/ordinario/eucharistic_liturgy_es}
+
+\subsection*{Plegaria Eucarística}
+\input{src/ordinario/eucharistic_prayer_es}
+
+\subsection*{Rito de la Comunión}
+\input{src/ordinario/communion_es}
+
+\subsection*{Rito de Conclusión}
+\input{src/ordinario/concluding_es}
+\end{spanish}
+
+\begin{french}
+\chapter[Ordinaire de la Messe][Ordinaire de la Messe]{Ordinaire de la Messe}
+\subsection*{Rite d’Entree}
+
+\input{src/ordinario/intro_fr}
+
+\section[Liturgie de la Parole]{Liturgie de la Parole}
+
+\section[Liturgie Eucharistique]{Liturgie Eucharistique}
+\input{src/ordinario/eucharistic_liturgy_fr}
+
+\subsection*{Prière Eucharistique}
+\input{src/ordinario/eucharistic_prayer_fr}
+
+\subsection*{La Communion}
+\input{src/ordinario/communion_fr}
+
+\subsection*{Conclusion}
+\input{src/ordinario/concluding_fr}
+\end{french}
+
+\begin{english}
+\chapter[The order of Mass][The order of Mass]{The order of Mass}
+\subsection*{Introductory Rites}
+
+\input{src/ordinario/intro_en}
+
+\section[The Liturgy of the Word]{The Liturgy of the Word}
+
+\section[The Liturgy of the Eucharist]{The Liturgy of the Eucharist}
+\input{src/ordinario/eucharistic_liturgy_en}
+
+\subsection*{The Eucharistic Prayer}
+\input{src/ordinario/eucharistic_prayer_en}
+
+\subsection*{The Communion Rite}
+\input{src/ordinario/communion_en}
+
+\subsection*{Concluding Rite}
+\input{src/ordinario/concluding_en}
+\end{english}
+
+\end{document}

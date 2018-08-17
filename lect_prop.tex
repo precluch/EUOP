@@ -1,0 +1,20 @@
+\setmainfont{Adobe Garamond Pro}[
+	Contextuals=Swash,
+	Numbers={OldStyle, Proportional},
+	Ligatures={Common, Rare}]
+
+\newcommand{\dd}[1]{
+	\addtocontents{toc}{{\protect{\hspace{\parindent}#1}\dotfill~~~\thepage\endgraf}}
+	\begin{center}
+		\titling\textsc{\Large{#1}}
+	\end{center}
+}
+
+
+\setlength{\parskip}{0em}
+\setlength{\parindent}{\myindent}
+\setaftersubsecskip{1pt}
+\setbeforesubsecskip{1pt}
+
+\widowpenalty10000
+\clubpenalty10000

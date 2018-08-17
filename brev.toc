@@ -1,0 +1,54 @@
+\select@language {english}
+\thispagestyle {empty}
+\contentsline {chapter}{Wednesday * Mercredi * Środa}{4}{chapter*.1}
+\contentsline {section}{Morning Prayer}{4}{section*.2}
+\select@language {english}
+\select@language {english}
+\contentsline {section}{Liturgy of the Word}{12}{section*.10}
+\select@language {english}
+\select@language {english}
+\contentsline {section}{Liturgie de la Parole}{15}{section*.11}
+\select@language {french}
+\select@language {english}
+\contentsline {section}{Liturgia Słowa}{18}{section*.12}
+\select@language {polish}
+\select@language {english}
+\contentsline {chapter}{Thursday * Jeudi * Czwartek}{22}{chapter*.13}
+\contentsline {section}{Office des Laudes}{22}{section*.14}
+\select@language {french}
+\select@language {english}
+\contentsline {section}{Liturgy of the Word}{30}{section*.23}
+\select@language {english}
+\select@language {english}
+\contentsline {section}{Liturgie de la Parole}{33}{section*.24}
+\select@language {french}
+\select@language {english}
+\contentsline {section}{Liturgia Słowa}{36}{section*.25}
+\select@language {polish}
+\select@language {english}
+\contentsline {chapter}{Friday * Vendredi * Piątek}{40}{chapter*.26}
+\contentsline {section}{Morning Prayer}{40}{section*.27}
+\select@language {english}
+\select@language {english}
+\contentsline {section}{Liturgy of the Word}{48}{section*.35}
+\select@language {english}
+\select@language {english}
+\contentsline {section}{Liturgie de la Parole}{51}{section*.36}
+\select@language {french}
+\select@language {english}
+\contentsline {section}{Liturgia Słowa}{54}{section*.37}
+\select@language {polish}
+\select@language {english}
+\contentsline {chapter}{Saturday * Samedi * Sobota}{58}{chapter*.38}
+\contentsline {section}{Office des Laudes}{58}{section*.39}
+\select@language {french}
+\select@language {english}
+\contentsline {section}{Liturgy of the Word}{66}{section*.48}
+\select@language {english}
+\select@language {english}
+\contentsline {section}{Liturgie de la Parole}{68}{section*.49}
+\select@language {french}
+\select@language {english}
+\contentsline {section}{Liturgia Słowa}{70}{section*.50}
+\select@language {polish}
+\select@language {english}
